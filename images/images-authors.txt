@@ -1,0 +1,14 @@
+All images are downloaded from website Unsplash (https://unsplash.com/).
+Resolution are the same 640x426 to simplify this project and make it scalable on mobile phone.
+Bellow are the list of all authors and there images that I used in this project. Thanks to everyone for providing free images :)
+
+Jesse Gardner - https://unsplash.com/photos/0tKc9vaYUAw
+Quino Al - https://unsplash.com/photos/mBQIfKlvowM
+Filippo - https://unsplash.com/photos/a-river-running-through-a-forest-next-to-a-mountain-H2eQ2JZc4ww
+taro ohtani - https://unsplash.com/photos/a-red-traffic-light-sitting-on-the-side-of-a-road-JXgXZ26qtnM
+César Couto - https://unsplash.com/photos/cRFQr9Nep1s
+Rowen Smith - https://unsplash.com/photos/wKBOIGIXN2E
+Kellen Riggin - https://unsplash.com/photos/the-golden-gate-bridge-in-the-distance-as-the-sun-sets-CGTOGmpuk6A
+Dennis Mita - https://unsplash.com/photos/a-blue-lake-surrounded-by-mountains-and-trees-vNzDt2sHINA
+Slava Auchynnikau - https://unsplash.com/photos/a-blue-lake-surrounded-by-mountains-and-trees-vNzDt2sHINA
+Andrei Pogrebnyak - https://unsplash.com/photos/a-body-of-water-surrounded-by-lush-green-trees-68bwpp9-U9U

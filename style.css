@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+:root {
+  --circle: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="%23fff" class="bi bi-circle-fill" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8"/></svg>');
+
+  --left-arrow: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="%23fff" class="bi bi-chevron-compact-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/></svg>');
+  --right-arrow: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="%23fff" class="bi bi-chevron-compact-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/></svg>');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  /* Adjust here for mobile screen */
+  height: 80%;
+  width: 100%;
+
+  background: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  width: 640px;
+  height: 426px;
+
+  background: gray;
+
+  z-index: 1;
+}
+
+.select-image-container {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 100%;
+  height: 10%;
+
+  bottom: 0;
+  
+  background: none;
+  border: none;
+
+  z-index: 100;
+}
+
+.select-image-container > button {
+  border: none;
+  background: none;
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+.select-image-container > button:hover {
+  scale: 1.5;
+
+  opacity: 1;
+}
+
+.first-btn::before,
+.second-btn::before,
+.third-btn::before,
+.fourth-btn::before,
+.fifth-btn::before,
+.sixth-btn::before,
+.seventh-btn::before,
+.eight-btn::before,
+.ninth-btn::before {
+  content: var(--circle);
+}
+
+.previous-btn,
+.next-btn {
+  background: none;
+  border: none;
+
+  height: 220px;
+  width: 120px;
+
+  cursor: pointer;
+
+  z-index: 100;
+}
+
+.previous-btn {
+  
+}
+
+.next-btn {
+  
+}
+
+.previous-btn:hover,
+.next-btn:hover {
+  scale: 1.5;
+}
+
+.previous-btn::before {
+  content: var(--left-arrow);
+}
+
+.next-btn::before {
+  content: var(--right-arrow);
+}
