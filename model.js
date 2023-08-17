@@ -78,6 +78,14 @@ export default class Model {
     }
   }
 
+  getCurrentImageId() {
+    for (let i = 0; i < this.imagesArray.length; i++) {
+      if (this.imagesArray[i].isSelected) {
+        return this.imagesArray[i].id;
+      }
+    }
+  }
+
   changeToNextImage() {
     for (let i = 0; i < this.imagesArray.length; i++) {
       if (this.imagesArray[i].isSelected) {
@@ -116,7 +124,7 @@ export default class Model {
 
   changeImageWithId(id) {
     const currentImage = this._getCurrentImage();
-    
+
     for (let i = 0; i < this.imagesArray.length; i++) {
       if (id === this.imagesArray[i].id) {
         currentImage.isSelected = false;

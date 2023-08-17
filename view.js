@@ -6,43 +6,44 @@ export default class View {
 
     this.selectImageContainer = this.createElement('div', 'select-image-container');
 
-    this.firstImageBtn = this.createElement('button', 'first-btn');
+    this.firstImageBtn = this.createElement('button', 'btn');
     this.firstImageBtn.type = 'button';
     this.firstImageBtn.id = 1;
+    this.firstImageBtn.classList.add('current-image');
 
-    this.secondImageBtn = this.createElement('button', 'second-btn');
+    this.secondImageBtn = this.createElement('button', 'btn');
     this.secondImageBtn.type = 'button';
     this.secondImageBtn.id = 2;
 
-    this.thirdImageBtn = this.createElement('button', 'third-btn');
+    this.thirdImageBtn = this.createElement('button', 'btn');
     this.thirdImageBtn.type = 'button';
     this.thirdImageBtn.id = 3;
 
-    this.fourthImageBtn = this.createElement('button', 'fourth-btn');
+    this.fourthImageBtn = this.createElement('button', 'btn');
     this.fourthImageBtn.type = 'button';
     this.fourthImageBtn.id = 4;
 
-    this.fifthImageBtn = this.createElement('button', 'fifth-btn');
+    this.fifthImageBtn = this.createElement('button', 'btn');
     this.fifthImageBtn.type = 'button';
     this.fifthImageBtn.id = 5;
     
-    this.sixthImageBtn = this.createElement('button', 'sixth-btn');
+    this.sixthImageBtn = this.createElement('button', 'btn');
     this.sixthImageBtn.type = 'button';
     this.sixthImageBtn.id = 6;
 
-    this.seventhImageBtn = this.createElement('button', 'seventh-btn');
+    this.seventhImageBtn = this.createElement('button', 'btn');
     this.seventhImageBtn.type = 'button';
     this.seventhImageBtn.id = 7;
 
-    this.eighthImageBtn = this.createElement('button', 'eight-btn');
+    this.eighthImageBtn = this.createElement('button', 'btn');
     this.eighthImageBtn.type = 'button';
     this.eighthImageBtn.id = 8;
 
-    this.ninthImageBtn = this.createElement('button', 'ninth-btn');
+    this.ninthImageBtn = this.createElement('button', 'btn');
     this.ninthImageBtn.type = 'button';
     this.ninthImageBtn.id = 9;
 
-    this.tenthImageBtn = this.createElement('button', 'first-btn');
+    this.tenthImageBtn = this.createElement('button', 'btn');
     this.tenthImageBtn.type = 'button';
     this.tenthImageBtn.id = 10;
 
@@ -110,5 +111,17 @@ export default class View {
     }
 
     this.imageContainer.append(image);
+  }
+
+  selectedBtn(id) {
+    const buttons = document.querySelectorAll('.btn');
+
+    buttons.forEach(btn => {
+      btn.classList.remove('current-image');
+
+      if (btn.id == id) {
+        btn.classList.add('current-image');
+      }
+    })
   }
 }
