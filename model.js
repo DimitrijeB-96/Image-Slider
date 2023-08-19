@@ -1,8 +1,8 @@
 export default class Model {
   constructor() {
     this.imagesArray = [
-      {id: 1, name: 'Balloons', isSelected: true},
-      {id: 2, name: 'Beach', isSelected: false},
+      {id: 1, name: 'Balloons', isSelected: false},
+      {id: 2, name: 'Beach', isSelected: true},
       {id: 3, name: 'Bridge', isSelected: false},
       {id: 4, name: 'Cloudy-Forest', isSelected: false},
       {id: 5, name: 'Lake', isSelected: false},
@@ -58,10 +58,6 @@ export default class Model {
     this.imagesArray[9].image = tenthImage;
   }
 
-  loopThrought() {
-   // Have images change automatically every 5 secounds
-  }
-
   getFirstImage() {
     return this.imagesArray[0].image;
   }
@@ -76,6 +72,16 @@ export default class Model {
         return this.imagesArray[i];
       }
     }
+  }
+
+  allFalse() {
+    for (let i = 0; i < this.imagesArray.length; i++) {
+      if (this.imagesArray[i].isSelected) {
+        this.imagesArray[i].isSelected = false;
+      }
+    }
+
+    return this.imagesArray;
   }
 
   getCurrentImageId() {
@@ -134,5 +140,4 @@ export default class Model {
       }
     }
   }
-
 }
